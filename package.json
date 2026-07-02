@@ -2,6 +2,6 @@
     "name": "my_portfolio",
     "version": "1.0.0",
     "scripts": {
-        "build": "npm run build"
+        "build": "echo 'no build needed'"
     }
 }

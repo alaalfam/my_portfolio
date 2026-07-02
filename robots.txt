@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://armanlaalfam.ir/sitemap.xml

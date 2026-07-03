@@ -84,6 +84,7 @@ nav.wrap {
   font-size: 18px;
   letter-spacing: -0.02em;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .logo span {

@@ -4,6 +4,30 @@ const menuToggle = document.getElementById("menuToggle");
 const menuClose = document.getElementById("menuClose");
 const navMenu = document.getElementById("navMenu");
 
+const logo = document.getElementById("logoScrollTop");
+// smooth scaling transitions
+logo.style.transition = 'transform 300ms ease';
+logo.style.willChange = 'transform';
+logo.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+logo.addEventListener("mouseover", () => {
+  animateLogoScaleUp();
+});
+
+logo.addEventListener("mouseout", () => {
+  animateLogoScaleDown();
+});
+
+function animateLogoScaleUp() {
+  logo.style.transform = 'scale(1.1)';
+}
+
+function animateLogoScaleDown() {
+  logo.style.transform = 'scale(1)';
+}
+
 function openMenu() {
   navMenu.classList.add("active");
   menuToggle.classList.add("is-hidden");

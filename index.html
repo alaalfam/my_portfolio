@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
@@ -23,9 +23,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -42,13 +42,19 @@
         <li class="menu-close-row">
           <button class="menu-close" id="menuClose" aria-label="Close navigation menu">✕ Close</button>
         </li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#education" data-i18n="nav_education">Education</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         <li>
-          <a class="nav-cta" href="cv.pdf" download>
+          <div class="lang-toggle" role="group" aria-label="Language switch">
+            <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="fa">FA</button>
+          </div>
+        </li>
+        <li>
+          <a class="nav-cta" href="cv.pdf" download data-i18n="nav_cta">
             Download CV
           </a>
         </li>
@@ -59,20 +65,26 @@
   <section class="hero">
     <div class="wrap hero-inner">
       <div class="hero-main">
-        <div class="eyebrow">Senior Full Stack Software Engineer</div>
-        <h1>Hi, I'm <span class="accent">Arman Laalfam</span> — I build production‑ready apps and services.</h1>
-        <p class="sub">I specialize in Flutter and full‑stack development, delivering scalable solutions for web and
+        <div class="eyebrow" data-i18n="hero_eyebrow">Senior Full Stack Software Engineer</div>
+        <h1 data-i18n="hero_h1">Hi, I'm <span class="accent">Arman Laalfam</span> — I build production‑ready apps and
+          services.</h1>
+        <p class="sub" data-i18n="hero_sub">I specialize in Flutter and full‑stack development, delivering scalable
+          solutions for web and
           mobile platforms. With a strong focus on clean architecture and performance optimization, I create
           applications that are both robust and user-friendly.</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
-          <a href="cv.pdf" download class="btn btn-ghost">Download CV</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_contact">Get in touch</a>
+          <a href="cv.pdf" download class="btn btn-ghost" data-i18n="hero_btn_cv">Download CV</a>
         </div>
         <div class="stats">
-          <div class="stat fade-el"><b>6+</b><span>Years of experience</span></div>
-          <div class="stat fade-el"><b>5</b><span>Companies as Flutter / full‑stack engineer</span></div>
-          <div class="stat fade-el"><b>650k+</b><span>Active users served (Asanbar)</span></div>
-          <div class="stat fade-el"><b>911k+</b><span>Combined users</span></div>
+          <div class="stat fade-el"><b data-i18n="stat1_num">6+</b><span data-i18n="stat1_label">Years of
+              experience</span></div>
+          <div class="stat fade-el"><b data-i18n="stat2_num">5</b><span data-i18n="stat2_label">Companies as Flutter /
+              full‑stack engineer</span></div>
+          <div class="stat fade-el"><b data-i18n="stat3_num">650k+</b><span data-i18n="stat3_label">Active users served
+              (Asanbar)</span></div>
+          <div class="stat fade-el"><b data-i18n="stat4_num">911k+</b><span data-i18n="stat4_label">Combined
+              users</span></div>
         </div>
       </div>
     </div>
@@ -80,9 +92,10 @@
   <section id="projects">
     <div class="wrap">
       <div class="section-head fade-el">
-        <div class="section-tag">Selected work</div>
-        <div class="section-title">Published projects web and apps</div>
-        <p class="section-desc">A selection of production websites and apps I've built and shipped, live right now on
+        <div class="section-tag" data-i18n="projects_tag">Selected work</div>
+        <div class="section-title" data-i18n="projects_title">Published projects web and apps</div>
+        <p class="section-desc" data-i18n="projects_desc">A selection of production websites and apps I've built and
+          shipped, live right now on
           Cafe Bazaar,
           Google Play and the App Store.</p>
       </div>
@@ -94,72 +107,79 @@
           <div class="app-top">
             <div class="app-icon" style="background:#00C2A8;">A</div>
             <div>
-              <div class="app-name">Furniture Online Shop</div>
+              <div class="app-name" data-i18n="proj1_name">Furniture Online Shop</div>
             </div>
           </div>
-          <div class="app-desc">Responsive furniture e-commerce website with a modern design and seamless user
+          <div class="app-desc" data-i18n="proj1_desc">Responsive furniture e-commerce website with a modern design and
+            seamless user
             experience.
           </div>
-          <div class="app-links"><a href="https://furniture-online-shop.netlify.app/" target="_blank"
-              rel="noopener">Open Website ↗</a></div>
+          <div class="app-links"><a href="https://furniture-online-shop.netlify.app/" target="_blank" rel="noopener"
+              data-i18n="proj1_link">Open Website ↗</a></div>
         </div>
 
         <div class="app-card fade-el">
           <div class="app-top">
             <div class="app-icon" style="background:#00C2A8;">A</div>
             <div>
-              <div class="app-name">Furniture Admin panel Online Shop</div>
+              <div class="app-name" data-i18n="proj2_name">Furniture Admin panel Online Shop</div>
             </div>
           </div>
-          <div class="app-desc">Responsive furniture e-commerce admin panel website with a modern design and seamless
+          <div class="app-desc" data-i18n="proj2_desc">Responsive furniture e-commerce admin panel website with a modern
+            design and seamless
             user experience.
           </div>
-          <div class="app-links"><a href="https://furniture-admin-panel.netlify.app/" target="_blank"
-              rel="noopener">Open Website ↗</a></div>
+          <div class="app-links"><a href="https://furniture-admin-panel.netlify.app/" target="_blank" rel="noopener"
+              data-i18n="proj2_link">Open Website ↗</a></div>
         </div>
 
         <div class="app-card fade-el">
           <div class="app-top">
             <div class="app-icon" style="background:#00C2A8;">A</div>
             <div>
-              <div class="app-name">Asanbar Drivers</div>
+              <div class="app-name" data-i18n="proj3_name">Asanbar Drivers</div>
               <div class="app-id">asanbar.com.driverasanbar</div>
             </div>
           </div>
-          <div class="app-desc">On‑demand freight platform connecting cargo firms with nearby truck drivers. Owned
+          <div class="app-desc" data-i18n="proj3_desc">On‑demand freight platform connecting cargo firms with nearby
+            truck drivers. Owned
             stabilization and core feature development, serving 50,000+ active users.</div>
           <div class="app-links"><a href="https://cafebazaar.ir/app/asanbar.com.driverasanbar?l=en" target="_blank"
-              rel="noopener">Cafe Bazaar ↗</a></div>
+              rel="noopener" data-i18n="proj3_link">Cafe Bazaar ↗</a></div>
         </div>
 
         <div class="app-card fade-el">
           <div class="app-top">
             <div class="app-icon" style="background:#F2A93B;">A</div>
             <div>
-              <div class="app-name">Asanbar Broker</div>
+              <div class="app-name" data-i18n="proj4_name">Asanbar Broker</div>
               <div class="app-id">com.asanbar.brokerasanbar</div>
             </div>
           </div>
-          <div class="app-desc">The broker‑side companion to Asanbar. Lets logistics brokers post loads, track shipments
+          <div class="app-desc" data-i18n="proj4_desc">The broker‑side companion to Asanbar. Lets logistics brokers post
+            loads, track shipments
             in real time and receive offers directly from carriers.</div>
           <div class="app-links"><a href="https://cafebazaar.ir/app/com.asanbar.brokerasanbar?l=en" target="_blank"
-              rel="noopener">Cafe Bazaar ↗</a></div>
+              rel="noopener" data-i18n="proj4_link">Cafe Bazaar ↗</a></div>
         </div>
 
         <div class="app-card fade-el">
           <div class="app-top">
             <div class="app-icon" style="background:#00C2A8;">T</div>
             <div>
-              <div class="app-name">TeaLink — Persian Hub</div>
+              <div class="app-name" data-i18n="proj5_name">TeaLink — Persian Hub</div>
               <div class="app-id">com.tealinkapp</div>
             </div>
           </div>
-          <div class="app-desc">Community hub for the Persian diaspora, shipped as technical lead at Fluxodio with
+          <div class="app-desc" data-i18n="proj5_desc">Community hub for the Persian diaspora, shipped as technical lead
+            at Fluxodio with
             real‑time chat, notifications, and event registration.</div>
           <div class="app-links">
-            <a href="https://play.google.com/store/apps/details?id=com.tealinkapp" target="_blank" rel="noopener">Google
+            <a href="https://play.google.com/store/apps/details?id=com.tealinkapp" target="_blank" rel="noopener"
+              data-i18n="proj5_link_play">Google
               Play ↗</a>
-            <a href="https://apps.apple.com/us/app/tealink-persian-hub/id6748558986" target="_blank" rel="noopener">App
+            <a href="https://apps.apple.com/us/app/tealink-persian-hub/id6748558986" target="_blank" rel="noopener"
+              data-i18n="proj5_link_appstore">App
               Store ↗</a>
           </div>
         </div>
@@ -168,28 +188,30 @@
           <div class="app-top">
             <div class="app-icon" style="background:#6C8CFF;">G</div>
             <div>
-              <div class="app-name">Gerdoo</div>
+              <div class="app-name" data-i18n="proj6_name">Gerdoo</div>
               <div class="app-id">com.gerdoo.app</div>
             </div>
           </div>
-          <div class="app-desc">Production application built as technical lead at Fluxodio, owning architecture across
+          <div class="app-desc" data-i18n="proj6_desc">Production application built as technical lead at Fluxodio,
+            owning architecture across
             mobile, backend and web layers.</div>
-          <div class="app-links"><a href="https://cafebazaar.ir/app/com.gerdoo.app?l=en" target="_blank"
-              rel="noopener">Cafe Bazaar ↗</a></div>
+          <div class="app-links"><a href="https://cafebazaar.ir/app/com.gerdoo.app?l=en" target="_blank" rel="noopener"
+              data-i18n="proj6_link">Cafe Bazaar ↗</a></div>
         </div>
 
         <div class="app-card fade-el">
           <div class="app-top">
             <div class="app-icon" style="background:#E85D5D;">S</div>
             <div>
-              <div class="app-name">Startamin</div>
+              <div class="app-name" data-i18n="proj7_name">Startamin</div>
               <div class="app-id">com.startamin.startamin_mobile_app</div>
             </div>
           </div>
-          <div class="app-desc">Iran's first crowdfunding marketplace app — developed and launched end‑to‑end at Aaicco,
+          <div class="app-desc" data-i18n="proj7_desc">Iran's first crowdfunding marketplace app — developed and
+            launched end‑to‑end at Aaicco,
             from concept to store release in 6 months.</div>
           <div class="app-links"><a href="https://cafebazaar.ir/app/com.startamin.startamin_mobile_app?l=en"
-              target="_blank" rel="noopener">Cafe Bazaar ↗</a></div>
+              target="_blank" rel="noopener" data-i18n="proj7_link">Cafe Bazaar ↗</a></div>
         </div>
       </div>
     </div>
@@ -198,8 +220,8 @@
   <section id="experience">
     <div class="wrap">
       <div class="section-head fade-el">
-        <div class="section-tag">Career</div>
-        <div class="section-title">Professional experience</div>
+        <div class="section-tag" data-i18n="experience_tag">Career</div>
+        <div class="section-title" data-i18n="experience_title">Professional experience</div>
       </div>
 
       <div class="timeline">
@@ -207,22 +229,27 @@
         <div class="job fade-el">
           <div class="job-head">
             <div>
-              <div class="job-title">Senior Full Stack Software Engineer</div>
-              <div class="job-company">Fluxodio · 8 months</div>
+              <div class="job-title" data-i18n="job1_title">Senior Full Stack Software Engineer</div>
+              <div class="job-company" data-i18n="job1_company">Fluxodio · 8 months</div>
             </div>
-            <div class="job-meta">2025 Mar – 2025 Dec<br>Tehran, Iran</div>
+            <div class="job-meta" data-i18n="job1_meta">2025 Mar – 2025 Dec<br>Tehran, Iran</div>
           </div>
           <ul class="job-bullets">
-            <li>Acted as <b>technical lead</b> for two production applications (Tealink, Gerdoo), owning architecture
+            <li data-i18n="job1_b1">Acted as <b>technical lead</b> for two production applications (Tealink, Gerdoo),
+              owning architecture
               decisions across <b>mobile, backend, and web</b> layers and reviewing code from a team of 5 engineers.
             </li>
-            <li>Designed and implemented backend services in <b>C#/.NET</b> supporting both applications, including
+            <li data-i18n="job1_b2">Designed and implemented backend services in <b>C#/.NET</b> supporting both
+              applications, including
               real‑time notification service, Chats, Register Events, User Authentication.</li>
-            <li>Built and maintained web‑facing features using <b>React/TypeScript</b>, ensuring consistent business
+            <li data-i18n="job1_b3">Built and maintained web‑facing features using <b>React/TypeScript</b>, ensuring
+              consistent business
               logic and data contracts across mobile, web, and backend.</li>
-            <li>Managed the full release lifecycle for iOS and Android, shipping 4 releases to Google Play and the Apple
+            <li data-i18n="job1_b4">Managed the full release lifecycle for iOS and Android, shipping 4 releases to
+              Google Play and the Apple
               App Store with <b>zero rollback incidents</b>.</li>
-            <li><b>Mentored</b> 5 engineers on clean code practices and Flutter architecture, raising team code review
+            <li data-i18n="job1_b5"><b>Mentored</b> 5 engineers on clean code practices and Flutter architecture,
+              raising team code review
               pass rate from <b>20% to 80%</b>.</li>
           </ul>
         </div>
@@ -230,24 +257,30 @@
         <div class="job fade-el">
           <div class="job-head">
             <div>
-              <div class="job-title">Senior Full Stack Software Engineer</div>
-              <div class="job-company">Asanbar · 1 year 6 months</div>
+              <div class="job-title" data-i18n="job2_title">Senior Full Stack Software Engineer</div>
+              <div class="job-company" data-i18n="job2_company">Asanbar · 1 year 6 months</div>
             </div>
-            <div class="job-meta">2023 Aug – 2025 Mar<br>Tehran, Iran</div>
+            <div class="job-meta" data-i18n="job2_meta">2023 Aug – 2025 Mar<br>Tehran, Iran</div>
           </div>
           <ul class="job-bullets">
-            <li>Owned development and stabilization of two large‑scale production applications (Driver and Owner
+            <li data-i18n="job2_b1">Owned development and stabilization of two large‑scale production applications
+              (Driver and Owner
               platforms), serving <b>50,000+ active users</b>.</li>
-            <li>Reduced application <b>crash rate from 87% to 5%</b> by leading a cross‑cutting performance optimization
+            <li data-i18n="job2_b2">Reduced application <b>crash rate from 87% to 5%</b> by leading a cross‑cutting
+              performance optimization
               initiative, directly improving user retention and app store ratings.</li>
-            <li>Designed and shipped core product features including map integration, identity verification, real‑time
+            <li data-i18n="job2_b3">Designed and shipped core product features including map integration, identity
+              verification, real‑time
               GPS tracking, and payment workflows, end‑to‑end from backend to UI.</li>
-            <li>Developed and maintained backend services in <b>C#/.NET</b> supporting the payments and
+            <li data-i18n="job2_b4">Developed and maintained backend services in <b>C#/.NET</b> supporting the payments
+              and
               identity‑verification APIs, integrated with PostgreSQL/MariaDB.</li>
-            <li>Refactored application state management architecture, cutting state‑related production bugs by
+            <li data-i18n="job2_b5">Refactored application state management architecture, cutting state‑related
+              production bugs by
               <b>80%</b>.
             </li>
-            <li>Implemented native payment integration directly in Android using Java/Kotlin via Flutter method
+            <li data-i18n="job2_b6">Implemented native payment integration directly in Android using Java/Kotlin via
+              Flutter method
               channels, bridging native payment SDKs with the Flutter application layer to ensure reliable transaction
               handling.</li>
           </ul>
@@ -256,19 +289,22 @@
         <div class="job fade-el">
           <div class="job-head">
             <div>
-              <div class="job-title">Senior Flutter Developer</div>
-              <div class="job-company">Commit-m · 1 year 5 months</div>
+              <div class="job-title" data-i18n="job3_title">Senior Flutter Developer</div>
+              <div class="job-company" data-i18n="job3_company">Commit-m · 1 year 5 months</div>
             </div>
-            <div class="job-meta">2022 Mar – 2023 Aug<br>Tehran, Iran</div>
+            <div class="job-meta" data-i18n="job3_meta">2022 Mar – 2023 Aug<br>Tehran, Iran</div>
           </div>
           <ul class="job-bullets">
-            <li>Founded and led the <b>mobile engineering</b> effort for Footballiha, a social sports super‑app, growing
+            <li data-i18n="job3_b1">Founded and led the <b>mobile engineering</b> effort for Footballiha, a social
+              sports super‑app, growing
               the Flutter team from 1 to 4 engineers within two months.</li>
-            <li>Architected and delivered core platform features including real‑time chat, video playback and sharing, a
+            <li data-i18n="job3_b2">Architected and delivered core platform features including real‑time chat, video
+              playback and sharing, a
               digital wallet, and a token‑based rewards system; project was deprioritized when the company shifted
               strategic focus to another product.</li>
-            <li>Built an integrated in‑app shop and leaderboard system.</li>
-            <li>Established team coding standards and review processes as the team scaled from a solo effort to a
+            <li data-i18n="job3_b3">Built an integrated in‑app shop and leaderboard system.</li>
+            <li data-i18n="job3_b4">Established team coding standards and review processes as the team scaled from a
+              solo effort to a
               4‑person squad.</li>
           </ul>
         </div>
@@ -276,20 +312,24 @@
         <div class="job fade-el">
           <div class="job-head">
             <div>
-              <div class="job-title">Mid-level Flutter Developer</div>
-              <div class="job-company">Aaicco · 1 year</div>
+              <div class="job-title" data-i18n="job4_title">Mid-level Flutter Developer</div>
+              <div class="job-company" data-i18n="job4_company">Aaicco · 1 year</div>
             </div>
-            <div class="job-meta">2021 Mar – 2022 Mar<br>Tehran, Iran</div>
+            <div class="job-meta" data-i18n="job4_meta">2021 Mar – 2022 Mar<br>Tehran, Iran</div>
           </div>
           <ul class="job-bullets">
-            <li>Developed and launched <b>Startamin</b>, the company's first crowdfunding application, within 6 months,
+            <li data-i18n="job4_b1">Developed and launched <b>Startamin</b>, the company's first crowdfunding
+              application, within 6 months,
               taking it from concept to App Store/Play Store release.</li>
-            <li>Implemented native Android payment integration in Java/Kotlin via Flutter method channels for the
+            <li data-i18n="job4_b2">Implemented native Android payment integration in Java/Kotlin via Flutter method
+              channels for the
               Startamin app, bridging native payment SDKs with the Flutter layer to enable secure transaction
               processing.</li>
-            <li>Built <b>Sabad360</b> (investment management) and <b>Time's Up</b> (2D board game with animations),
+            <li data-i18n="job4_b3">Built <b>Sabad360</b> (investment management) and <b>Time's Up</b> (2D board game
+              with animations),
               covering UI implementation, state management, and API integration.</li>
-            <li>Promoted to Flutter mentor; trained an intern into a junior developer meeting production‑readiness
+            <li data-i18n="job4_b4">Promoted to Flutter mentor; trained an intern into a junior developer meeting
+              production‑readiness
               standards within 2 months.</li>
           </ul>
         </div>
@@ -297,15 +337,17 @@
         <div class="job fade-el">
           <div class="job-head">
             <div>
-              <div class="job-title">Junior Flutter Developer</div>
-              <div class="job-company">Varknow · 3 months</div>
+              <div class="job-title" data-i18n="job5_title">Junior Flutter Developer</div>
+              <div class="job-company" data-i18n="job5_company">Varknow · 3 months</div>
             </div>
-            <div class="job-meta">2020 Dec – 2021 Mar<br>Tehran, Iran</div>
+            <div class="job-meta" data-i18n="job5_meta">2020 Dec – 2021 Mar<br>Tehran, Iran</div>
           </div>
           <ul class="job-bullets">
-            <li>Promoted from intern to Junior Developer after 3 months and delivered two production apps: <b>Sutpe</b>
+            <li data-i18n="job5_b1">Promoted from intern to Junior Developer after 3 months and delivered two production
+              apps: <b>Sutpe</b>
               (Sharif University hall booking and competition platform) and <b>Shenas</b> (dating app).</li>
-            <li>Implemented core user‑facing features including booking flows, competition registration, and results
+            <li data-i18n="job5_b2">Implemented core user‑facing features including booking flows, competition
+              registration, and results
               display.</li>
           </ul>
         </div>
@@ -313,15 +355,17 @@
         <div class="job fade-el">
           <div class="job-head">
             <div>
-              <div class="job-title">Intern Flutter Developer</div>
-              <div class="job-company">Varknow · 3 months</div>
+              <div class="job-title" data-i18n="job6_title">Intern Flutter Developer</div>
+              <div class="job-company" data-i18n="job6_company">Varknow · 3 months</div>
             </div>
-            <div class="job-meta">2020 Sep – 2020 Dec<br>Tehran, Iran</div>
+            <div class="job-meta" data-i18n="job6_meta">2020 Sep – 2020 Dec<br>Tehran, Iran</div>
           </div>
           <ul class="job-bullets">
-            <li>Built <b>Doctora</b>, a medication and prescription management app, as an internship capstone project
+            <li data-i18n="job6_b1">Built <b>Doctora</b>, a medication and prescription management app, as an internship
+              capstone project
               under senior mentorship.</li>
-            <li>Learned production Flutter development practices including state management, API integration, and UI
+            <li data-i18n="job6_b2">Learned production Flutter development practices including state management, API
+              integration, and UI
               testing fundamentals.</li>
           </ul>
         </div>
@@ -333,65 +377,66 @@
   <section id="skills">
     <div class="wrap">
       <div class="section-head fade-el">
-        <div class="section-tag">Toolbox</div>
-        <div class="section-title">Skills</div>
-        <p class="section-desc">The stack I use to take a product from architecture through to release.</p>
+        <div class="section-tag" data-i18n="skills_tag">Toolbox</div>
+        <div class="section-title" data-i18n="skills_title">Skills</div>
+        <p class="section-desc" data-i18n="skills_desc">The stack I use to take a product from architecture through to
+          release.</p>
       </div>
       <div class="skills-grid">
         <div class="skill-card fade-el">
-          <h4>Mobile Development</h4>
+          <h4 data-i18n="skill_h_mobile">Mobile Development</h4>
           <div class="tag-row"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Native
               Android (Java/Kotlin)</span><span class="tag">Mobile Performance Optimization</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Flutter Ecosystem</h4>
+          <h4 data-i18n="skill_h_flutter">Flutter Ecosystem</h4>
           <div class="tag-row"><span class="tag">Provider</span><span class="tag">BLoC</span><span
               class="tag">GetX</span><span class="tag">GoRouter</span><span class="tag">AutoRoute</span><span
               class="tag">VRouter</span><span class="tag">Hive</span><span class="tag">SQLite</span><span
               class="tag">Shared Preferences</span><span class="tag">Unit/Widget/Integration/Golden Tests</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Backend Development</h4>
+          <h4 data-i18n="skill_h_backend">Backend Development</h4>
           <div class="tag-row"><span class="tag">C# (.NET 8/9)</span><span class="tag">ASP.NET Core</span><span
               class="tag">Entity Framework Core</span><span class="tag">RESTful APIs</span><span class="tag">JWT /
               OAuth</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Frontend Development</h4>
+          <h4 data-i18n="skill_h_frontend">Frontend Development</h4>
           <div class="tag-row"><span class="tag">React</span><span class="tag">JavaScript (ES6+)</span><span
               class="tag">TypeScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span
               class="tag">Responsive Design</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Architecture & Design</h4>
+          <h4 data-i18n="skill_h_arch">Architecture & Design</h4>
           <div class="tag-row"><span class="tag">Clean Architecture</span><span class="tag">MVVM</span><span
               class="tag">Domain‑Driven Design</span><span class="tag">SOLID</span><span class="tag">Design
               Patterns</span><span class="tag">Scalable System Design</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Engineering Practices</h4>
+          <h4 data-i18n="skill_h_practices">Engineering Practices</h4>
           <div class="tag-row"><span class="tag">TDD</span><span class="tag">Code Reviews</span><span
               class="tag">Refactoring</span><span class="tag">Git & GitFlow</span><span class="tag">CI/CD
               Pipelines</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Database Development</h4>
+          <h4 data-i18n="skill_h_db">Database Development</h4>
           <div class="tag-row"><span class="tag">PostgreSQL</span><span class="tag">MariaDB</span><span
               class="tag">Microsoft SQL Server</span><span class="tag">Schema Design & Normalization</span><span
               class="tag">Query Optimization & Indexing</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>API & Integration</h4>
+          <h4 data-i18n="skill_h_api">API & Integration</h4>
           <div class="tag-row"><span class="tag">RESTful APIs</span><span class="tag">Swagger / OpenAPI</span><span
               class="tag">Postman</span><span class="tag">WebSockets</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Project Management & Delivery</h4>
+          <h4 data-i18n="skill_h_pm">Project Management & Delivery</h4>
           <div class="tag-row"><span class="tag">Agile</span><span class="tag">Scrum</span><span
               class="tag">Kanban</span><span class="tag">Jira</span><span class="tag">Trello</span></div>
         </div>
         <div class="skill-card fade-el">
-          <h4>Monitoring & Observability</h4>
+          <h4 data-i18n="skill_h_monitor">Monitoring & Observability</h4>
           <div class="tag-row"><span class="tag">Sentry</span><span class="tag">Firebase Crashlytics</span><span
               class="tag">Firebase Analytics</span><span class="tag">Metrix</span><span class="tag">WebEngage</span>
           </div>
@@ -403,46 +448,52 @@
   <section id="education">
     <div class="wrap">
       <div class="section-head fade-el">
-        <div class="section-tag">Foundation</div>
-        <div class="section-title">Education</div>
+        <div class="section-tag" data-i18n="education_tag">Foundation</div>
+        <div class="section-title" data-i18n="education_title">Education</div>
       </div>
 
       <div class="edu-card fade-el">
         <div class="edu-head">
           <div>
-            <div class="edu-degree">Bachelor of Computer Science</div>
-            <div class="edu-school">Tehran University</div>
+            <div class="edu-degree" data-i18n="edu_degree">Bachelor of Computer Science</div>
+            <div class="edu-school" data-i18n="edu_school">Tehran University</div>
           </div>
-          <div class="edu-meta">2012 Sep – 2018 Sep · Tehran, Iran</div>
+          <div class="edu-meta" data-i18n="edu_meta">2012 Sep – 2018 Sep · Tehran, Iran</div>
         </div>
         <ul class="edu-bullets">
-          <li><b>Term 1 — 2D Chess (Java, Swing/AWT):</b> Built a fully functional 2D Chess game for Windows in Java
+          <li data-i18n="edu_b1"><b>Term 1 — 2D Chess (Java, Swing/AWT):</b> Built a fully functional 2D Chess game for
+            Windows in Java
             using Swing and AWT, implementing complete game rules, piece movement logic, and turn‑based gameplay.</li>
-          <li><b>Term 2 — 2D Othello (Java, Swing/AWT):</b> Built a 2D Othello board game for Windows in Java using
+          <li data-i18n="edu_b2"><b>Term 2 — 2D Othello (Java, Swing/AWT):</b> Built a 2D Othello board game for Windows
+            in Java using
             Swing and AWT, implementing board state management and flip logic across an 8×8 grid.</li>
-          <li><b>Pathfinding Board Game (Java, AI/Search Algorithms):</b> Designed and implemented a board game
+          <li data-i18n="edu_b3"><b>Pathfinding Board Game (Java, AI/Search Algorithms):</b> Designed and implemented a
+            board game
             simulating a robot navigating from source to destination, building and benchmarking three shortest‑path
             algorithms — A*, IDA*, and Dijkstra — across three independent versions and comparing their performance in
             terms of speed and path optimality.</li>
-          <li><b>SMS Spam Detection Android App (AI & Data Mining):</b> Built an Android application for SMS spam
+          <li data-i18n="edu_b4"><b>SMS Spam Detection Android App (AI & Data Mining):</b> Built an Android application
+            for SMS spam
             detection, applying classification techniques to distinguish spam from legitimate messages.</li>
-          <li><b>Tech Stack Advisor Android App:</b> Built an Android application to assist technical leads in selecting
+          <li data-i18n="edu_b5"><b>Tech Stack Advisor Android App:</b> Built an Android application to assist technical
+            leads in selecting
             the most suitable programming language and technology stack for a given project, based on project
             requirements and constraints.</li>
         </ul>
 
         <div class="langs">
-          <div class="lang"><b>English</b><span>B2</span></div>
-          <div class="lang"><b>Persian</b><span>Native / Fluent</span></div>
+          <div class="lang"><b data-i18n="lang_en_name">English</b><span data-i18n="lang_en_level">B2</span></div>
+          <div class="lang"><b data-i18n="lang_fa_name">Persian</b><span data-i18n="lang_fa_level">Native /
+              Fluent</span></div>
         </div>
 
         <div class="interests">
-          <span class="tag">AI Engineering - Machine Learning</span>
-          <span class="tag">Sports — Basketball Coach Certificate</span>
-          <span class="tag">TRX Coach Certificate</span>
-          <span class="tag">Motorcycle — Slalom Certificate</span>
-          <span class="tag">Adventure</span>
-          <span class="tag">Game</span>
+          <span class="tag" data-i18n="interest_ai">AI Engineering - Machine Learning</span>
+          <span class="tag" data-i18n="interest_basketball">Sports — Basketball Coach Certificate</span>
+          <span class="tag" data-i18n="interest_trx">TRX Coach Certificate</span>
+          <span class="tag" data-i18n="interest_moto">Motorcycle — Slalom Certificate</span>
+          <span class="tag" data-i18n="interest_adventure">Adventure</span>
+          <span class="tag" data-i18n="interest_game">Game</span>
         </div>
       </div>
     </div>
@@ -451,24 +502,28 @@
   <section id="about">
     <div class="wrap">
       <div class="section-head fade-el">
-        <div class="section-tag">Background</div>
-        <div class="section-title">About me</div>
+        <div class="section-tag" data-i18n="about_tag">Background</div>
+        <div class="section-title" data-i18n="about_title">About me</div>
       </div>
       <div class="about-grid">
         <div class="about-text fade-el">
-          <p>Senior Full Stack Software Engineer with 6+ years of experience delivering production software across the
+          <p data-i18n="about_p1">Senior Full Stack Software Engineer with 6+ years of experience delivering production
+            software across the
             full stack: backend services in <b>C#/.NET</b>, cross‑platform mobile applications in <b>Flutter</b>, and
             web frontends in <b>React/TypeScript</b>.</p>
-          <p>Proven track record leading mobile and backend workstreams end‑to‑end, from architecture decisions through
+          <p data-i18n="about_p2">Proven track record leading mobile and backend workstreams end‑to‑end, from
+            architecture decisions through
             to App Store and Play Store releases. Skilled in Clean Architecture, Entity Framework Core, RESTful API
             design, and relational database modeling (PostgreSQL, MariaDB).</p>
-          <p>Experienced technical lead who mentors engineers and drives measurable improvements in performance and
+          <p data-i18n="about_p3">Experienced technical lead who mentors engineers and drives measurable improvements in
+            performance and
             stability.</p>
         </div>
         <div class="cv-card fade-el">
-          <h3>Resume / CV</h3>
-          <p>Get the full breakdown of my experience, skills and education as a PDF.</p>
-          <a class="btn btn-primary" href="cv.pdf" download style="width:100%;justify-content:center;">Download CV (PDF)
+          <h3 data-i18n="cv_title">Resume / CV</h3>
+          <p data-i18n="cv_desc">Get the full breakdown of my experience, skills and education as a PDF.</p>
+          <a class="btn btn-primary" href="cv.pdf" download style="width:100%;justify-content:center;"
+            data-i18n="cv_btn">Download CV (PDF)
             ↓</a>
         </div>
       </div>
@@ -478,24 +533,28 @@
   <section id="contact">
     <div class="wrap">
       <div class="contact-box fade-el">
-        <h2>Let's work together</h2>
-        <p>Open to new roles and freelance mobile / full‑stack projects — feel free to reach out.</p>
+        <h2 data-i18n="contact_title">Let's work together</h2>
+        <p data-i18n="contact_desc">Open to new roles and freelance mobile / full‑stack projects — feel free to reach
+          out.</p>
         <div class="contact-links">
-          <a class="btn btn-primary" href="mailto:alaalfam@gmail.com">Email me</a>
-          <a class="btn btn-ghost" href="tel:+989120248459">Call me</a>
+          <a class="btn btn-primary" href="mailto:alaalfam@gmail.com" data-i18n="contact_email">Email me</a>
+          <a class="btn btn-ghost" href="tel:+989120248459" data-i18n="contact_call">Call me</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/arman-laalfam-3764b8bb/" target="_blank"
-            rel="noopener">LinkedIn ↗</a>
-          <a class="btn btn-ghost" href="https://github.com/alaalfam" target="_blank" rel="noopener">GitHub ↗</a>
+            rel="noopener" data-i18n="contact_linkedin">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/alaalfam" target="_blank" rel="noopener"
+            data-i18n="contact_github">GitHub ↗</a>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="wrap">© <span id="year"></span> Arman Laalfam. Built with care.</div>
+    <div class="wrap">© <span id="year"></span> Arman Laalfam. <span data-i18n="footer_text">Built with care.</span>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
